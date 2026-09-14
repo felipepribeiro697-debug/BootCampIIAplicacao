@@ -22,4 +22,4 @@ Uma Pokédex no estilo retro que busca um Pokémon pelo nome ou número e exibe 
 
 ## Links
 - **Aplicação no ar (GitHub Pages):** https://felipepribeiro697-debug.github.io/BootCampIIAplicacao/
-- **Repositório:** https://felipepribeiro697-debug.github.io/BootCampIIAplicacao/
+- **Repositório:** https://github.com/felipepribeiro697-debug/BootCampIIAplicacao
