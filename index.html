@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Clássica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pokedex">
+        <div class="pokedex-top">
+            <div class="lens-border">
+                <div class="blue-lens">
+                    <div class="reflection"></div>
+                </div>
+            </div>
+            <div class="small-lights">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
+        </div>
+
+        <div class="screen-bezel">
+            <div class="screen-lights">
+                <div class="little-light red"></div>
+                <div class="little-light red"></div>
+            </div>
+            <div class="screen" id="screen">
+                <div id="pokemonCard" class="hidden">
+                    <img id="pokemonImg" src="" alt="Pokémon">
+                    <h2 id="pokemonName"></h2>
+                    <div class="types" id="pokemonTypes"></div>
+                </div>
+                <p id="errorMessage" class="error hidden">Erro! Não encontrado.</p>
+                <p id="waitingMessage" class="waiting">Aguardando dados...</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="pokemonInput" placeholder="Nome ou N°">
+            <button onclick="buscarPokemon()" class="search-btn">Buscar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
