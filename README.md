@@ -1,7 +1,7 @@
 # Pokédex Clássica
 
 ## Autor
-Felipe Ribeiro — Matrícula [PREENCHER]
+Felipe Domingos Ribeiro Pereira — Matrícula: 22604250
 
 ## Descrição
 Uma Pokédex no estilo retro que busca um Pokémon pelo nome ou número e exibe sua imagem oficial, nome e tipos.
@@ -22,4 +22,4 @@ Uma Pokédex no estilo retro que busca um Pokémon pelo nome ou número e exibe 
 
 ## Links
 - **Aplicação no ar (GitHub Pages):** https://felipepribeiro697-debug.github.io/BootCampIIAplicacao/
-- **Repositório:** https://github.com/felipepribeiro697-debug/BootCampIIAplicacao
+- **Repositório:** https://felipepribeiro697-debug.github.io/BootCampIIAplicacao/
