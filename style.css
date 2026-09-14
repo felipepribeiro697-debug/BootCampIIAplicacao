@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace; /* Fonte com estilo retro/digital */
+}
+
+body {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Carcaça Vermelha da Pokédex */
+.pokedex {
+    background-color: #dd0b2d;
+    width: 380px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #8b0000;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), inset -5px -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Lente Azul e Luzes Superiores */
+.pokedex-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.lens-border {
+    background-color: #dedede;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid #555;
+}
+
+.blue-lens {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 30%, #51cbf5, #005a99);
+    border-radius: 50%;
+    border: 3px solid #222;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.8);
+}
+
+.reflection {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.small-lights {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.light {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #222;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.4);
+}
+
+.light.red { background-color: #ff0000; }
+.light.yellow { background-color: #ffcc00; }
+.light.green { background-color: #00cc00; }
+
+/* Borda Branca da Tela (O Bezel) */
+.screen-bezel {
+    background-color: #dedede;
+    padding: 20px;
+    border-radius: 10px 10px 40px 10px; /* Aquele corte clássico no canto inferior esquerdo */
+    border: 2px solid #555;
+    margin-bottom: 20px;
+}
+
+.screen-lights {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.little-light {
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+/* A Tela em Si */
+.screen {
+    background-color: #232323; /* Fundo preto/cinza escuro */
+    border-radius: 5px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #111;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+.screen img {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(2px 2px 0px rgba(255,255,255,0.2));
+}
+
+.screen h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.types {
+    margin-top: 10px;
+}
+
+.types span {
+    background-color: #444;
+    border: 1px solid #888;
+    padding: 4px 8px;
+    margin: 0 4px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Controles de Busca (Botões da Pokédex) */
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    background-color: #4bd0a0; /* Cor da tela verde clássica do GameBoy para o input */
+    border: 3px solid #222;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    color: #333;
+}
+
+.search-btn {
+    padding: 12px 20px;
+    background-color: #222; /* Botão escuro como o D-Pad */
+    color: #fff;
+    border: 2px solid #111;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.search-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+.hidden { display: none !important; }
+.waiting { color: #888; font-style: italic; }
+.error { color: #ff5555; font-weight: bold; }
