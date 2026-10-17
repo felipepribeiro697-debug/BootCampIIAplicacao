@@ -3,8 +3,8 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 // --- Configuração do Supabase ---
 // Preencha com os dados do SEU projeto: Project Settings -> API
 // A "anon public" key é feita para uso no frontend (não é segredo de servidor).
-const SUPABASE_URL = "SUA_URL_AQUI";
-const SUPABASE_ANON_KEY = "SUA_CHAVE_ANON_AQUI";
+const SUPABASE_URL = "https://lxovprhafktjsdnhaojh.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_7ZAcXauKC2ee-352CqavPA_LqZUG_b_";
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
