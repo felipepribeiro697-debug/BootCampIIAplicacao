@@ -1,0 +1,12 @@
+# Controle de versão e documentação não precisam ir pra dentro da imagem:
+# deixam o build mais rápido e a imagem menor (a imagem só precisa dos
+# arquivos que o Nginx realmente serve).
+.git
+.gitignore
+README.md
+*.md
+
+# Arquivos de SO/editor que não fazem parte da aplicação
+.vscode
+Thumbs.db
+.DS_Store
