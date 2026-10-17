@@ -1,7 +1,7 @@
 # Pokédex Clássica
 
 ## Autor
-Felipe Ribeiro — Matrícula [PREENCHER]
+Felipe Domingos Ribeiro Pereira — Matrícula: 22604250
 
 ## Descrição
 Uma Pokédex no estilo retro que busca um Pokémon pelo nome ou número, exibe sua imagem oficial, nome e tipos, e permite salvar um time de Pokémon favoritos com persistência em banco de dados real.
