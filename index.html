@@ -31,6 +31,7 @@
                     <img id="pokemonImg" src="" alt="Pokémon">
                     <h2 id="pokemonName"></h2>
                     <div class="types" id="pokemonTypes"></div>
+                    <button id="btnFavoritar" class="fav-btn">⭐ Adicionar ao time</button>
                 </div>
                 <p id="errorMessage" class="error hidden">Erro! Não encontrado.</p>
                 <p id="waitingMessage" class="waiting">Aguardando dados...</p>
@@ -39,10 +40,17 @@
 
         <div class="controls">
             <input type="text" id="pokemonInput" placeholder="Nome ou N°">
-            <button onclick="buscarPokemon()" class="search-btn">Buscar</button>
+            <button id="btnBuscar" class="search-btn">Buscar</button>
+        </div>
+
+        <div class="team-section">
+            <h3>Meu Time</h3>
+            <div id="teamList" class="team-list">
+                <p class="waiting">Carregando time...</p>
+            </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
